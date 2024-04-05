@@ -9,7 +9,7 @@
 
 import numpy as np
 import random
-# Fixed Parameters
+#Fixed Parameters
 expectancy_mean = 55
 expectancy_std = 10
 expectancy_min = 25
