@@ -56,10 +56,10 @@ def initial_politicians():
             politician.life_expectancy = np.clip(np.random.normal(expectancy_mean, expectancy_std), politician.age + 1, expectancy_max)
             politician_pool.append(politician) #Finally pushing them into our array of politicians
 
-# Update the annual_influx_of_candidates function to pass the current year
+#Updating the annual_influx_of_candidates function to pass the current year
 def annual_influx_of_candidates(current_year):
     new_candidates_count = int(np.round(np.random.normal(new_mean, new_std)))
-    new_candidates_count = max(new_candidates_count, 0)  # Ensure non-negative
+    new_candidates_count = max(new_candidates_count, 0) 
     for _ in range(new_candidates_count):
         new_politician = Politician(current_year)
         politician_pool.append(new_politician)
